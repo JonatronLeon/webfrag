@@ -1,0 +1,21 @@
+<div class="email-client-modal">
+	<div class="modal-header">
+	    <h3>Email</h3>
+	</div>
+	<div class="modal-body">
+        <table class="content">
+            <tr ng-repeat="email in emails" class="email-row">
+                <td>{{ email.subject }}</td>
+                <td>{{ email.from }}</td>
+                <td>{{ email.date }}</td>
+                <td><button class="btn btn-primary" ng-click="open()">Open</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="modal-footer">
+    <!--
+        <button class="btn btn-primary" ng-click="ok()">OK</button>
+        <button class="btn btn-primary" ng-click="cancel()">Cancel</button>
+    -->
+    </div>
+</div>

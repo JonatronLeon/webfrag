@@ -1,0 +1,73 @@
+body {
+    background: #ff9000;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.desktop-icon {
+    padding: 0 0 0 1em;
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+}
+
+.desktop-icon:hover {
+    color: #01e185;
+}
+
+.header {
+    background: #020a1e;
+    width: 45%;
+    min-width: 50em;
+    height: 3em;
+    padding: 0.5em 0 0.5em 0;
+    border-radius: 0 0 2em 0;
+}
+
+.left {
+    float: left;
+}
+
+.shadow {
+    -moz-box-shadow: 0.125em 0.125em 1em #000;
+    -webkit-box-shadow: 0.125em 0.125em 1em #000;
+    box-shadow: 0.125em 0.125em 1em #000;
+}
+
+.defrag .modal-header {
+    background-color: #333333;
+    color: #eeeeee;
+}
+
+.defrag .modal-body {
+    background-color: #e3cdab;
+}
+
+.defrag .modal-footer {
+    background-color: #c0a57c;
+    border-top: 1px solid #6e5b3d;
+}
+
+.defrag .btn-primary{
+    color:#ffffff;
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color:#b99866;
+    background-image:-moz-linear-gradient(top, #b99866, #846d49);
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#b99866), to(#846d49));
+    background-image:-webkit-linear-gradient(top, #b99866, #846d49);
+    background-image:-o-linear-gradient(top, #b99866, #846d49);
+    background-image:linear-gradient(to bottom, #b99866, #846d49);
+    background-repeat:repeat-x;
+    border-color:#846d49 #846d49 #947a52;
+    border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.btn-primary.disabled,.btn-primary[disabled]{
+    color:#ffffff;
+    background-color:#846d49;
+}
+
