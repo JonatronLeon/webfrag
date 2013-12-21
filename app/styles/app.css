@@ -34,6 +34,10 @@ body {
     float: left;
 }
 
+.right {
+    float: right;
+}
+
 .shadow {
     -moz-box-shadow: 0.125em 0.125em 1em #000;
     -webkit-box-shadow: 0.125em 0.125em 1em #000;
@@ -65,9 +69,39 @@ body {
     background-image:linear-gradient(to bottom, #b99866, #846d49);
     background-repeat:repeat-x;
     border-color:#846d49 #846d49 #947a52;
-    border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.btn-primary.disabled,.btn-primary[disabled]{
     color:#ffffff;
     background-color:#846d49;
 }
 
+.defrag .emails {
+    width: 100%;
+}
+
+.modal.fade {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.defrag .email-client-modal {
+    width: 98%;
+    left: 1%;
+    margin: 0;
+}
+
+.defrag .email-modal {
+    left: 50%;
+    width: 50%;
+}
+
+.defrag .modal-subheader {
+    border-bottom: 1px solid #846d49;
+}
+
+.defrag .modal-close-btn {
+    position: absolute;
+    right: 1%;
+    cursor: pointer;
+}
