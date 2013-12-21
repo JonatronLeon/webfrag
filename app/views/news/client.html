@@ -1,0 +1,13 @@
+<div class="modal-header">
+    <span class="fi-x modal-close-btn" ng-click="close()"></span>
+    <h3>News</h3>
+</div>
+<div class="modal-body" style="background-color: #eaeaea; overflow: hidden">
+    <div class="eso-s">
+        <span style="position: fixed; margin: 30px 15px 15px 15px">Madame Eso</span>
+    </div>
+    <div class="article-line" ng-repeat="article in articles" ng-click="open(article)">{{ article.date }} - <strong ng-hide="email.read" style="padding-right: 5px">[NEW]</strong> {{ article.headline }}</div>
+</div>
+<div class="modal-footer">
+
+</div>

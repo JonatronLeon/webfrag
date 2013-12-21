@@ -91,9 +91,10 @@ body {
     margin: 0;
 }
 
-.defrag .email-modal {
-    left: 50%;
-    width: 50%;
+.defrag .news-client-modal {
+    width: 70%;
+    margin: 0;
+    left: 1%;
 }
 
 .defrag .modal-subheader {
@@ -104,4 +105,42 @@ body {
     position: absolute;
     right: 1%;
     cursor: pointer;
+}
+
+.defrag .eso-s {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3em;
+    background-image: url(img/news-banner.png);
+    background-color: #2a0013;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 600px;
+    height: 75px;
+    color: #fffddd;
+}
+
+.defrag .article-line {
+    position: relative;
+    padding-top: 90px;
+}
+
+.defrag .article-line:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.defrag .forum-left {
+    width: 30%;
+    border-right: 1px solid #846d49;
+}
+
+.defrag .forum-right {
+    width: 70%;
+}
+
+.defrag .fourth-wall-modal {
+    color: #fffddd;
+    font-weight: bold;
 }
