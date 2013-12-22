@@ -3,6 +3,7 @@ app.controller('NewsClientCtrl', function NewsClientCtrl ($scope, $modal, $modal
     $scope.articles = NewsClient.query(); // get articles
     
     $scope.open = function (article) {
+        article.read = true;
         // open article modal
         var modalInstance = $modal.open({
             templateUrl: 'views/news/article.html',

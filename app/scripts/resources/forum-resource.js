@@ -6,22 +6,25 @@ app.factory('Forum', ['DefragResource', function (DefragResource) {
     Forum.defaultConfig.localData = [
         {
             name: 'General',
+            active: false,
+            read: false,
             topics: [
                 {
                     name: 'Welcome to DeFrag Corp!',
+                    read: false,
                     posts: [
                         {
-                            user: 'petra',
+                            username: 'petra',
                             text: 'Hi everyone! My name is Petra.',
                             date: '10/11/2014'
                         },
                         {
-                            user: 'yuko',
+                            username: 'yuko',
                             text: 'Haaaaaaaaayy',
                             date: '10/11/2014'
                         },
                         {
-                            user: 'bearington',
+                            username: 'bearington',
                             text: 'WELCOME',
                             date: '10/11/2014'
                         }
@@ -35,7 +38,21 @@ app.factory('Forum', ['DefragResource', function (DefragResource) {
         },
         {
             name: 'Real Life',
-            topics: []
+            active: false,
+            read: false,
+            topics: [
+                {
+                    name: 'What is..what it is?',
+                    read: false,
+                    posts: [
+                        {
+                            username: 'yuko',
+                            text: 'I can\'t breaf.',
+                            date: '10/11/2014'
+                        }
+                    ]
+                }
+            ]
         }
     ];
     

@@ -2,6 +2,14 @@ body {
     background: #ff9000;
 }
 
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+}
+
 .content {
     width: 100%;
     height: 100%;
@@ -121,26 +129,69 @@ body {
     color: #fffddd;
 }
 
-.defrag .article-line {
+.defrag .article {
     position: relative;
     padding-top: 90px;
 }
 
-.defrag .article-line:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .defrag .forum-left {
-    width: 30%;
-    border-right: 1px solid #846d49;
+    width: 38%;
+    height: 100%;
+    display: inline-block;
+    padding: 0 0 0 10px;
 }
 
 .defrag .forum-right {
-    width: 70%;
+    width: 60%;
+    height: 100%;
+    /*border-left: 1px solid #846d49;*/
+    display: inline-block;
 }
 
 .defrag .fourth-wall-modal {
     color: #fffddd;
     font-weight: bold;
+}
+
+.defrag .forum-category:hover {
+    text-decoration: underline;
+}
+
+.defrag .post {
+    border-bottom: 1px solid #846d49;
+}
+
+.defrag .profilepic {
+    border: 1px solid #846d49;
+}
+
+.defrag .post-date {
+    color: #c0a57c;
+}
+
+.defrag .forum-modal {
+    width: 98%;
+    left: 1%;
+    margin: 0;
+}
+
+.defrag .profile {
+    min-width: 100px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    border-left: 1px solid #846d49;
+    border-right: 1px solid #846d49;
+}
+
+.defrag .post-content {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0 0 15px;
+    vertical-align: top;
+}
+
+.defrag .topic-footer {
+    border-left: 1px solid #846d49;
+    padding: 15px;
+    text-align: right;
 }

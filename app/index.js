@@ -12,5 +12,6 @@ var app = angular.module('DeFragApp', [
         });
     $locationProvider.html5Mode(true);
 }]).constant('API_PATH', {
-    baseURL: '/api/v1/'
+    baseURL: '/api/v1/',
+    profilepicDir: '/styles/img/users/'
 });

@@ -1,21 +1,47 @@
 <div class="modal-header">
-    <span class="fi-x modal-close-btn" ng-click="close()"></span>
+    <span class="df-icon df-close modal-close-btn" ng-click="close()"></span>
     <h3>Forums</h3>
 </div>
-<div class="modal-body">
-    <span class="forum-left">
+<div class="modal-body" style="margin: 0; padding: 0">
+    <div class="forum-left left">
         <div ng-repeat="category in data">
-            <span class="fi-folder"></span><span>{{ category.name }}</span>
-            <ul>
-                <li ng-repeat="topic in category.topics" ng-click="open(topic)">
-                    {{ topic.name }}
+            <div ng-click="toggle(category)">
+                <span class="df-icon" ng-class="{ 'df-fol-open': category.active, 'df-fol-close': !category.active }" style="padding-right: 5px"></span>
+                <a href="#">
+                    <strong ng-hide="category.read" style="padding-right: 5px">[NEW]</strong>
+                    {{ category.name }}
+                </a>
+            </div>
+            <ul ng-show="category.active">
+                <li ng-repeat="topic in category.topics">
+                    <a href="#" ng-click="open(topic)">
+                        <strong ng-hide="topic.read && topic.replied" style="padding-right: 5px">[NEW]</strong>
+                        {{ topic.name }}
+                    </a>
                 </li>
             </ul>
         </div>
-    </span>
-    <span class="forum-right">
-        
-    </span>
+    </div>
+    <div class="forum-right right">
+        <table style="width: 100%">
+            <tr ng-repeat="post in posts" ng-show="posts.length" class="post">
+                <td class="profile">
+                    <div>
+                        <strong style="font-size: 18px">{{ post.username }}</strong>
+                    </div>
+                    <div>
+                        <img class="profilepic" src="{{ profilepicDir + post.username }}.png" />
+                    </div>
+                </td>
+                <td class="post-content">
+                    <div>{{ post.text }}</div>
+                </td>
+            </tr>
+        </table>
+        <div class="topic-footer" ng-show="posts.length">
+            <button class="btn btn-primary" ng-click="reply()" ng-disabled="activeTopic.replied">Reply</button>
+        </div>
+    </div>
 </div>
 <div class="modal-footer">
     
